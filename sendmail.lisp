@@ -63,10 +63,10 @@
 	   ((attachments mail-output-stream)
 	    (build-attachments mail-output-stream))
 	   
-	   ((and
-	     (string-equal (content-type mail-output-stream) "text")
-	     (string-equal (content-subtype mail-output-stream) "html"))
-	    (build-xhtml-email mail-output-stream))
+	   ;; ((and
+	   ;;   (string-equal (content-type mail-output-stream) "text")
+	   ;;   (string-equal (content-subtype mail-output-stream) "html"))
+	   ;;  (build-xhtml-email mail-output-stream))
 	   
 	   ((string-equal (content-type mail-output-stream) "text")
 	    (change-class mail-output-stream
